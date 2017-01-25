@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+// FONTS
+@font-title: 'Montserrat', sans-serif;
+@font-parrafo: 'PT Sans', sans-serif;
+@font-size: 14px;
+
+/**** DIMENTIOS ****/
+@max-width: 1020px;
+@padding: 12px;
+
+/**** PATHS ****/
+@path-images: '../images';
+
+// COLORS
+@color-green: #3BB24A;
+@color-red: #EE4765;
+@color-gray: #F2F2F2; 
+@color-gray2: #4D4D4D;
+@color-gray3: #929292;
+@color-white: #FFFFFF;
+
+/**** RESPONSIVE ****/
+@deviceSmall: 480px;
+@smartphones: 768px;
+@tablets: 992px;
+@notebook: 1200px;
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+
+/**** RETINA ****/
+.retina(@rules){
+	@media only screen and (-webkit-min-device-pixel-ratio: 2){
+		@rules();
+	}
+}

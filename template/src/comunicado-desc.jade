@@ -1,0 +1,34 @@
+include ./_head.jade  
+body
+    div#fb-root
+    script 
+        include ./script.js
+    include ./_menu.jade
+    div.frame-header-team
+    div.img-frame-team
+    div.content-frame-team
+        span.numeral #
+        h1 NUESTRA GESTIÓN<br>ES UNA REALIDAD
+    div.content.row(style="margin-top: -30px")
+        div.col-xs-12.col-lg-8
+            div.section-article
+                div.line /
+                    h1 COMUNICADOS DE PRENSA
+            div.title-green-date
+                h3 ¡A seguir honrando la confianza de la gente!
+                p Feb 23, 2016 
+            div.row 
+                p.text-gray Descripción muy breve de lo que significa un proyecto de ley. Descripción muy breve de lo que significa un proyecto de ley. Descripción muy breve de lo que significa un proyecto de ley. Descripción muy breve de lo que signifi- ca un proyecto de ley. 
+                div.video-container
+                    iframe(src="http://www.youtube.com/embed/4QLkwoOIrwo" frameborder="0" width="460" height="315")
+                div.col-xs-6.center-xs
+                    img(src="/images/articulos/art-1.jpg")
+                div.col-xs-6.center-xs
+                     img(src="/images/articulos/art-2.jpg")
+                div.col-xs-12.fuente__section
+                    h1 Fuente:
+                        a(href="http://www.orfec.com/?p=29424") 
+                            span http://www.orfec.com/?p=29424 
+                include ./__section-social.jade
+        include ./__panel-der.jade
+    include ./_footer.jade

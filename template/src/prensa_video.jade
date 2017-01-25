@@ -1,0 +1,69 @@
+include ./_head.jade 
+body
+    div#fb-root
+    script 
+        include ./script.js
+    include ./_menu.jade
+    div.frame-header-team
+    div.img-frame-team
+    div.content-frame-team
+        span.numeral #
+        h1 NUESTRA GESTIÓN<br>ES UNA REALIDAD
+    div.content.row(style="margin-top: -30px;")
+        div.col-xs-12.col-lg-8
+            div.section-article
+                div.line /
+                    h1 VIDEOS 
+            div.row(style="margin-top: 50px;")
+                div.modal.fade#videoModal(tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true")
+                    div.modal-dialog
+                        div.modal-content
+                            div.modal-body
+                                button.close(type="button" data-dismiss="modal" aria-hidden="true") &times;
+                                div
+                                    iframe(width="100%" height="350")
+                                div.section-social-video.row
+                                    a(href="#").social-btn.face-btn
+                                        div.col-xs-2 
+                                            span
+                                            p Facebook
+                                    a(href="").social-btn.twitter-btn
+                                        div.col-xs-2
+                                            span
+                                            p Twitter
+                                    a(href="").social-btn.google-btn
+                                        div.col-xs-2
+                                            span
+                                            p Google+
+                                    a(href="").social-btn.mail-btn
+                                        div.col-xs-2
+                                            span
+                                            p E-mail
+                                    a(href="whatsapp://send?text= http://localhost:8080/prensa_video.html" data-action="share/whatsapp/share").social-btn.whatsapp-btn
+                                        div.col-xs-2
+                                            span
+                                            p WhatsApp
+                div.col-xs-12.col-sm-6.center-xs
+                    div.video-container
+                        a(href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s").btn.btn-default 
+                            img.img-video-contact(src="http://img.youtube.com/vi/loFtozxZG0s/2.jpg")
+                div.col-xs-12.col-sm-6.center-xs
+                    div.video-container
+                        a(href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s").btn.btn-default 
+                            img.img-video-contact(src="http://img.youtube.com/vi/loFtozxZG0s/1.jpg")
+                div.col-xs-12.col-sm-6.center-xs
+                    div.video-container
+                        a(href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s").btn.btn-default 
+                            img.img-video-contact(src="http://img.youtube.com/vi/loFtozxZG0s/2.jpg")
+                div.col-xs-12.col-sm-6.center-xs
+                    div.video-container
+                        a(href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s").btn.btn-default 
+                            img.img-video-contact(src="http://img.youtube.com/vi/loFtozxZG0s/1.jpg")            
+            div.col-xs-12.content-ver-pdf-red
+                div.ver-pdf-red
+                    p Ir a canal 
+                        span YOUTUBE
+                    a(href="#")
+                        img(src="images/video.svg")
+        include ./__panel-der.jade
+    include ./_footer.jade

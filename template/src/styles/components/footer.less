@@ -1,0 +1,90 @@
+.footer {
+    padding: 20px 10%;
+    background: @color-gray2;
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+    .content-contact-footer{
+        margin-top: 15px;
+    }
+    .line {
+        color: @color-red;
+        font-size: 24px;
+        padding: 10px 0px;
+        margin-top: -15px;
+        .responsive(@deviceSmall,{
+            margin-left: 10px;
+            });
+        p {
+            margin-left: 20px;
+            margin-top: -25px;
+            color: #a1a1a1;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        span {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: -15px;
+            color: #a1a1a1;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .especial {
+            margin-top: 4px;
+        }
+        strong {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: -25px;
+            color: #a1a1a1;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    .derechos {
+        position: absolute;
+        bottom: 10px;
+        height: 0px;
+        background: @color-white;
+        text-align: center;
+        width: 90%;
+        p {
+            padding: 6px;
+            color: @color-gray2;
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 10%;
+            .responsive(@smartphones,{
+                font-size: 10px;
+                });
+            span {
+                font-weight: bold;
+                color: @color-green;
+            }
+        }
+    }
+    .logo-footer {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .right-footer {
+        .butt {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,100%);
+        }
+        p{
+            text-align: center;
+            color: @color-white;
+            margin-top: 40px;
+            font-weight: normal;
+            font-size: 14px;
+            span{
+                color: @color-green;
+            }
+        }
+    }
+}

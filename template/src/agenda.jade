@@ -1,0 +1,170 @@
+body
+    include ./_head.jade  
+    script
+        include ./script.js
+    include ./_menu.jade
+    div.frame-header-team
+    div.img-frame-team
+    div.content-frame-team
+        span.numeral #
+        h1 NUESTRA GESTIÓN<br>ES UNA REALIDAD
+    div.content-team.row
+        div.col-xs-12.col-lg-8
+            div.section-article
+                div.line /
+                    h1 AGENDA
+                        br
+                        span POLÍTICA
+                div.row 
+                    div.col-xs-12.col-sm-4.enun-order
+                        p ORDERNAR POR:
+                    div.col-sm-2.col-md-2.col-xs-12.select-agenda
+                        select
+                            option FECHA
+                    div.col-sm-2.col-md-2.col-xs-12.select-agenda
+                        select
+                            option CUIDAD
+                    div.col-sm-2.col-md-2.col-xs-12.select-agenda
+                        select
+                            option EVENTO
+            div.row.calendar
+                    div.col-xs-1
+                        div.circle-number
+                            h2 22
+                                br
+                                span FEB
+                                br
+                                strong 2016
+                    div.col-xs-10.col-sm-9
+                        div.content-calendar
+                            p CONGRESO POR LA MUJER
+                                br
+                                span Yopal - Colombia
+                    div.col-xs-12.col-sm-2.headerver
+                        a
+                            div.btn-calendar(style="margin-top: -22px")
+                                p VER +
+                    div.contentvermas.col-xs-11
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio suscipit eligendi reiciendis quam! Atque, necessitatibus. Ullam ipsum, dolorum quasi tempore voluptatibus, iusto ea labore ab iste magni, maxime. Illum, quisquam.
+                        p
+                            strong Solocitado a:  
+                            span Comisión Primera
+                        p
+                            strong Fecha: 
+                            span Abril 13 de 2014
+                        p
+                            strong Estado: 
+                            span En lectura
+                        div.col-xs-12(style="text-align: -webkit-center; margin-top: 50px;")
+                            a.media(href="nn.pdf")
+                div.row.calendar
+                    div.col-xs-1
+                        div.circle-number
+                            h2 22
+                                br
+                                span FEB
+                                br
+                                strong 2016
+                    div.col-xs-10.col-sm-9
+                        div.content-calendar
+                            p CONGRESO POR LA MUJER
+                                br
+                                span Yopal - Colombia
+                    div.col-xs-12.col-sm-2.headerver
+                        a
+                            div.btn-calendar(style="margin-top: -22px")
+                                p VER +
+                    div.contentvermas.col-xs-11
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio suscipit eligendi reiciendis quam! Atque, necessitatibus. Ullam ipsum, dolorum quasi tempore voluptatibus, iusto ea labore ab iste magni, maxime. Illum, quisquam.
+                        p
+                            strong Solocitado a:  
+                                span Comisión Primera
+                        p
+                            strong Fecha: 
+                                span Abril 13 de 2014
+                        p
+                            strong Estado: 
+                                span En lectura
+                        div.col-xs-12(style="text-align: -webkit-center; margin-top: 50px;")
+                            a.media(href="nn.pdf")
+                div.row.calendar
+                    div.col-xs-1
+                        div.circle-number
+                            h2 22
+                                br
+                                span FEB
+                                br
+                                strong 2016
+                    div.col-xs-10.col-sm-9
+                        div.content-calendar
+                            p CONGRESO POR LA MUJER
+                                br
+                                span Yopal - Colombia
+                    div.col-xs-12.col-sm-2.headerver
+                        a
+                            div.btn-calendar(style="margin-top: -22px")
+                                p VER +
+                    div.contentvermas.col-xs-11
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio suscipit eligendi reiciendis quam! Atque, necessitatibus. Ullam ipsum, dolorum quasi tempore voluptatibus, iusto ea labore ab iste magni, maxime. Illum, quisquam.
+                        p
+                            strong Solocitado a:  
+                                span Comisión Primera
+                        p
+                            strong Fecha: 
+                                span Abril 13 de 2014
+                        p
+                            strong Estado: 
+                                span En lectura
+                        div.col-xs-12(style="text-align: -webkit-center; margin-top: 50px;")
+                            a.media(href="nn.pdf")
+            div.col-xs-12.center-xs
+                ul.pagination
+                    li
+                        a(href="#") 1
+                    li
+                        a(href="#") 2
+                    li
+                        a(href="#") 3
+                    li
+                        a(href="#") 4
+                    li
+                        a(href="#") 5
+        div.col-xs-12.col-lg-4(style="margin-top: 30px;")
+             div.row.content-right
+                 include ./_social.jade
+                 div.col-xs-12.line /
+                     h1 CUÉNTENOS SU
+                         br
+                         span DENUNCIA
+                 div.col-xs-12
+                     form.form-right.row
+                         div.col-xs-12
+                             select(name="tipo")
+                                 option Tema o categoría
+                                 option 1
+                                 option 2
+                                 option 3
+                                 option 4
+                             input(name="",placeholder="Correo electronico")
+                             textarea(name="",placeholder="Denuncia")
+                         div.col-xs-5
+                             input(name="",placeholder="Nombre")
+                         div.col-xs-6
+                             input.input-left(name="",placeholder="Apellido")
+                         a.btn-form-2(href="#")
+                                div
+                                    p ENVIAR
+                 div.line /
+                    h1 PUBLICACIONES 
+                        br
+                        span PROPIAS 
+                 div.col-xs-12.content-notice
+                        img(src="images/notice/noti1.jpg")
+                        h3 Protección para la mujer del campo boyasence
+                        span Feb 12, 2016
+                        p Según un estudio del Dpto de Geografía de la Universidad Nacional de Colombia - Sitio Oficial, señala que existe...
+                            a(href="#")
+                                span Seguir leyendo
+               
+    include ./_footer.jade
+             

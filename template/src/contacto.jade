@@ -1,0 +1,55 @@
+include ./_head.jade  
+body
+    div#fb-root
+    script 
+        include ./script.js
+    include ./_menu.jade
+    div.frame-header-team
+    div.img-frame-team
+    div.content-frame-team
+        span.numeral #
+        h1 NUESTRA GESTIÓN<br>ES UNA REALIDAD
+    div.content.row(style="margin-top: -30px")
+        div.col-xs-12.col-lg-8
+            div.section-article
+                div.line.row.middle-xs /
+                    h1.col-xs-12 CONTACTO
+            div.contact-info
+                p Teléfono
+                p +57 (1) 3823451 / 34441
+                br
+                p Dirección
+                p Edificio Nuevo del Congreso
+                p Carrera 7 No 8-68. Oficina 228
+                br
+                p Correo electrónico
+                p contacto@sandraortiz.co
+                p representante@sandraortiz.co
+            div.section-article 
+                div.line.row.middle-xs /
+                    h1.col-xs-12 PARTICIPA
+            div.form_contact
+                form
+                    div.col-xs-12
+                        input#nombre(name="" placeholder="NOMBRE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NOMBRE'")
+                        div.select_form_contact
+                            select(name="tipo")
+                                option TEMA O CATEGORÍA
+                                option 1
+                                option 2
+                                option 3
+                                option 4
+                        input#correo(name="" placeholder="CORREO ELECTRÓNICO" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CORREO ELECTRÓNICO'")
+                        textarea#denuncia(name="" placeholder="DENUNCIA" onfocus="")
+                    a(href="#")
+                        div.btn-form-contact
+                            p ENVIAR
+            div.section-article
+                div.line.row.middle-xs /
+                    h1.col-xs-12 REDES SOCIALES 
+            div.col-xs-12.content-social-contact
+                img(src="images/face.svg")
+                img(src="images/twitter.svg")
+                img(src="images/youtube.svg")
+        include ./__panel-der.jade
+    include ./_footer.jade

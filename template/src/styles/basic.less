@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-size: @font-size;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+ 
+h1,h2,h3,h4,h5, span {
+    font-family: @font-title;
+    font-weight: normal;
+}
+p,article{
+    font-family: @font-parrafo;
+}
+a {
+    text-decoration: none;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    display: block;
+    input,
+    textarea {
+        font-family: @font-title;
+        background: @color-gray;
+        color: @color-gray2;
+        font-size: 1em;
+        outline-color: none;
+        padding: @padding;
+        resize: none;
+        width: 100%;
+    }
+}
+select, option{
+    font-family: @font-title !important;
+}
+iframe{
+    width: 100%;
+}

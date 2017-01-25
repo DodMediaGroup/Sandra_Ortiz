@@ -1,0 +1,137 @@
+.slide-index {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content__slide {
+    .background-slide {
+        position: absolute;
+        width: 68%;
+        height: 0;
+        border-top: 320px solid @color-green;
+        border-right: 230px solid transparent;
+        opacity: .6;
+        .responsive(@smartphones,{
+            width: 100%;
+            });
+    }
+    .img {
+        position: absolute;
+        z-index: 2;
+        margin: 6%;
+        width: 40% !important;
+        height: auto;
+    }
+    .btn {
+        position: absolute;
+        height: 24px;
+        width: 142px;
+        background: url(../images/btn-green.svg) center;
+        margin: 30% 10%;
+        font-size: 14px;
+        p {
+            color: @color-white;
+            margin: 3px 10px;
+            span {
+                color: @color-red;
+            }
+        }
+    }
+}
+
+.banner-perfil{
+    height: 380px;
+    width: 100%;
+    background: url(../images/sandra-perfil.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: -80px;
+    margin-top: 95px;
+    .detalle-perfil{
+        margin-left: 55%;
+        h1 {
+            z-index: 4;
+            position: absolute;
+            font-size: 40px;
+            margin-top: 8%;
+            line-height: 1em;
+            color: @color-white;
+        span {
+            color: @color-red;
+        }
+        .responsive(@tablets,{
+            font-size: 30px;
+            margin-top: 15%;
+            });
+        .responsive(@smartphones,{
+            font-size: 24px;
+            margin-top: 12%;
+            margin-left: 60px;
+            });
+         .responsive(@deviceSmall,{
+            font-size: 14px;
+            margin-left: 55px;
+            });
+    }
+    p {
+            position: absolute !important;
+            z-index: 4;
+            margin-top: 15%;
+            padding-right: 10%;
+            color: @color-white;
+            text-align: justify;
+            line-height: 1em;
+            font-size: 20px;
+            margin-left: -40px;
+            .responsive(@notebook,{
+                margin-top: 20%;
+                font-size: 16px;
+                });
+            .responsive(@tablets,{
+                margin-top: 25%;
+                });
+            .responsive(@smartphones,{
+                margin-top: 35%;
+                margin-left: 40px;
+                padding-right: 3%;
+                font-size: 14px;
+                });
+            .responsive(@deviceSmall,{
+                margin-top: 40%;
+                font-size: 12px;
+                });
+        }
+
+    }
+    .fondo-perfil{
+        float: right;
+        position: absolute;
+        width: 60%;
+        height: 0;
+        margin-left: 40%;
+        border-bottom: 380px solid @color-green;
+        border-left: 150px solid transparent;
+        opacity: .8;  
+        z-index: 2;
+        .responsive(@smartphones,{
+            margin-top: 27px;
+            width: 55%;
+            height: 0;
+            margin-left: 45%;
+            border-bottom: 327px solid @color-green;
+            border-left: 110px solid transparent;
+            });
+        .responsive(@deviceSmall,{
+            width: 65%;
+            margin-left: 35%;
+            });
+    }
+    .responsive(@tablets,{
+        background: url(../images/sandra-perfil-2.jpg) no-repeat center;
+        });
+    .responsive(@smartphones,{
+        background: url(../images/sandra-perfil-3.jpg) no-repeat center;
+        });
+}
